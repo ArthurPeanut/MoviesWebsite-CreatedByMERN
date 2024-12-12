@@ -31,6 +31,7 @@ export default class MoviesDAO {
 
         let cursor
         try {
+            // cursor fetches documents in batches, reducing memory consumption and bandwidth usage
             cursor = await movies
                 .find(query)
                 .limit(moviesPerPage)
