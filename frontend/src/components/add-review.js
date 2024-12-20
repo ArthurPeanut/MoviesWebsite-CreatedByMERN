@@ -1,8 +1,16 @@
+// import React, { useState } from "react";
+// import MovieDataService from "../services/movies"
+// import {Link} from "react-router-dom"
+// import Form from "react-bootstrap/Form"
+// import {Button} from "react-bootstrap"
+
 import React, { useState } from "react";
-import MovieDataService from "../services/movies"
-import {Link} from "react-router-dom"
-import Form from "react-bootstrap/Form"
-import Button from "react-bootstrap/Button"
+import MovieDataService from "../services/movies";
+import { Link } from "react-router-dom";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button"; // Correct import for Button component
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap styles are loaded
+
 
 const AddReview = props => {
     let editing = false

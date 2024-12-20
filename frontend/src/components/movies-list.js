@@ -1,12 +1,23 @@
+// import React, { useEffect, useState } from "react";
+// import MovieDataService from "../services/movies"
+// import {Link} from "react-router-dom"
+// import Form from "react-bootstrap/Form"
+// import {Button} from 'react-bootstrap'
+// import Col from 'react-bootstrap/Col'
+// import Row from 'react-bootstrap/Row'
+// import Container from 'react-bootstrap/Container'
+// import Card from 'react-bootstrap/Card'
+
 import React, { useEffect, useState } from "react";
-import MovieDataService from "../services/movies"
-import {Link} from "react-router-dom"
-import Form from "react-bootstrap/Form"
-import Button from 'react-bootstrap/Button'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
-import Card from 'react-bootstrap/Card'
+import MovieDataService from "../services/movies";
+import { Link } from "react-router-dom";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button"; // Ensure correct import
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card"; // Ensure correct import
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS if not already included
 
 const MoviesList = props => {
     const [movies, setMovies] = useState([])
@@ -112,3 +123,5 @@ const MoviesList = props => {
         </div>
     )
 }
+
+export default MoviesList

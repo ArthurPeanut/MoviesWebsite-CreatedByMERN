@@ -1,6 +1,12 @@
-import React, {useState} from "react";
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+// import React, {useState} from "react";
+// import Form from 'react-bootstrap/Form'
+// import {Button} from 'react-bootstrap'
+
+import React, { useState } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button"; // Direct import for Button component
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap styles are included
+
 
 const Login = props => {
     const [name, setName] = useState("")
