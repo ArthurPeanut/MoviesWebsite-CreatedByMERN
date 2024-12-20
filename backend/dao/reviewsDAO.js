@@ -21,7 +21,7 @@ export default class ReviewsDAO {
         try {
             const reviewDoc = {
                 name: user.name,
-                email: user.email,
+                // email: user.email,
                 date: date,
                 text: review,
                 movie_id: new ObjectId(movieId) // Convert movieId to a MongoDB object id

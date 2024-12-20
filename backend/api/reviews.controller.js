@@ -7,8 +7,8 @@ export default class ReviewsController {
             const review = req.body.review
             const userInfo = {
                 name: req.body.name,
-                _id: req.body.user_id,
-                email: req.body.email,
+                // _id: req.body.user_id,
+                // email: req.body.email,
             }
 
             const date = new Date()

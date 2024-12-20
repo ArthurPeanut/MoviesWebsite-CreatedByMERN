@@ -24,7 +24,7 @@ const AddReview = props => {
     const saveReview = () => {
         var data = {
             review: review,
-            name: props.user.id,
+            name: props.user.name,
             movie_id: props.match.params.id
         }
 
