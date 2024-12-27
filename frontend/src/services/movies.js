@@ -54,9 +54,16 @@ class MovieDataService {
     }
 
     find(query, by = "title", page = 0) {
+        // console.log(BASE_URL)
         return axios.get(
             `${BASE_URL}/api/v1/movies?${by}=${query}&page=${page}`
         );
+
+        // return axios.get(`http://localhost:8080/api/v1/movies/`);
+
+        // return axios.get(
+        //     `https://movieswebsite-createdbymern.onrender.com/api/v1/movies?${by}=${query}&page=${page}`
+        // );
     }
 
     createReview(data) {

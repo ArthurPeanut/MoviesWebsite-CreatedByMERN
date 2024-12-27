@@ -23,7 +23,7 @@ function App() {
     return (
         <div className="App">
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">HL's MovieHub</Navbar.Brand>
+                <Navbar.Brand href="#home">HL</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">

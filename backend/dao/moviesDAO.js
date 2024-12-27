@@ -23,7 +23,9 @@ export default class MoviesDAO {
         let query
         if (filters) {
             if ("title" in filters) {
-                query = { $text:{ $search: filters['title']}}
+                console.log("search by titles")
+                // query = { $text:{ $search: filters['title']}}
+                query = { title: { $regex: filters['title'], $options: "i" } }; // Case-insensitive partial match
             } else if ("rated" in filters) {
                 query = { "rated": {$eq:filters['rated']}}
             }
@@ -38,6 +40,8 @@ export default class MoviesDAO {
                 .skip(moviesPerPage * page)
             const moviesList = await cursor.toArray()
             const totalNumMovies = await movies.countDocuments(query)
+            console.log("return without error")
+            // console.log("movies:", moviesList)
             return {moviesList, totalNumMovies}
         }
         catch (e) {
