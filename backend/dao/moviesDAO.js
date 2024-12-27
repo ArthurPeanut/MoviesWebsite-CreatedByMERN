@@ -40,7 +40,7 @@ export default class MoviesDAO {
                 .skip(moviesPerPage * page)
             const moviesList = await cursor.toArray()
             const totalNumMovies = await movies.countDocuments(query)
-            console.log("return without error")
+            // console.log("return without error")
             // console.log("movies:", moviesList)
             return {moviesList, totalNumMovies}
         }
